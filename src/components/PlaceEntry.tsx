@@ -13,7 +13,7 @@ function PlaceEntry(props: PlaceProps): JSX.Element {
       <h2>{props.title}</h2>
       <p>
         One of my favourite places is {props.placeName} in {props.countryName}.
-        {props.reason}
+        {props.reason}.
       </p>
       <img
         src={props.mainImg}
