@@ -1,7 +1,7 @@
-import MainContent from "./components/MainContent";
+import MainContentMap from "./components/MainContentMap";
 
 function App(): JSX.Element {
-  return <MainContent />;
+  return <MainContentMap />;
 }
 
 export default App;
