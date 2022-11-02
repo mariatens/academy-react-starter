@@ -14,7 +14,7 @@ function MainContent(): JSX.Element {
         reason={
           " Nice weather, nature and city closeby, cheap and delicious food"
         }
-        alt={""}
+        alt={"Kowloon, Hong Kong at night"}
       />
 
       <PlaceEntry
@@ -26,7 +26,7 @@ function MainContent(): JSX.Element {
         }
         locationLink={"https://goo.gl/maps/mZM5oEpjKQSXpTQu9"}
         reason={" Lovely view, fresh air, calm"}
-        alt={""}
+        alt={"View of El Teide from Mirador de Chipeque"}
       />
       <PlaceEntry
         title={"Goatfell"}
@@ -37,7 +37,7 @@ function MainContent(): JSX.Element {
         }
         locationLink={"https://goo.gl/maps/u4Zoj9HYeExQNFJ96"}
         reason={" Nice hike"}
-        alt={""}
+        alt={"View from Goatfell mountain in isle of Arran"}
       />
       <PlaceEntry
         title={"Prague"}
@@ -48,7 +48,7 @@ function MainContent(): JSX.Element {
         }
         locationLink={"https://goo.gl/maps/SSsHzjbQLSqVeMB28"}
         reason={"Impressive architecture, cheap food, nice beer"}
-        alt={""}
+        alt={"View of Prague's bridge"}
       />
     </main>
   );
