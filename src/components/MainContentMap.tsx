@@ -30,6 +30,27 @@ const places:PlaceProps[] = [
         locationLink:"https://goo.gl/maps/mZM5oEpjKQSXpTQu9",
         reason:" Lovely view, fresh air, calm",
         alt:"View of El Teide from Mirador de Chipeque"
+    },
+    {
+        title:"Goatfell",
+        placeName:"Isle of Arran",
+        countryName:"Scotland",
+        mainImg:
+          "https://images.unsplash.com/photo-1505486068253-af049774746c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2816&q=80",
+        
+        locationLink:"https://goo.gl/maps/u4Zoj9HYeExQNFJ96",
+        reason:" Nice hike and views",
+        alt:"View from Goatfell mountain in isle of Arran"
+    },
+    {
+        title:"Prague",
+        placeName:"Prague",
+        countryName:"Czech Republic",
+        mainImg:
+          "https://images.unsplash.com/photo-1519677100203-a0e668c92439?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        locationLink:"https://goo.gl/maps/SSsHzjbQLSqVeMB28",
+        reason:" Impressive architecture, cheap food, nice beer",
+        alt:"View of Prague's bridge"
     }
 ]
 
@@ -37,7 +58,7 @@ const places:PlaceProps[] = [
 function MainContentMap(): JSX.Element {
     return(
         <section>
-        places.map(PlaceEntry)
+        {places.map(PlaceEntry)}
         </section>
     )
 }
