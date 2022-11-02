@@ -21,7 +21,7 @@ function PlaceEntry(props: PlaceProps): JSX.Element {
         width="600px"
         height="300px"
       ></img>
-      <a href={props.locationLink}></a>
+      <a href={props.locationLink}>Location</a>
     </section>
   );
 }
