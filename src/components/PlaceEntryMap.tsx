@@ -1,3 +1,5 @@
+import "./style.css";
+
 
 interface PlaceProps {
     title: string;
@@ -8,29 +10,25 @@ interface PlaceProps {
     locationLink: string;
     reason: string;
   }
-  const styles = {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
+ 
 function PlaceEntry(props: PlaceProps): JSX.Element {
     return (
-      <section>
-        <h2 style = {styles}>{props.title}</h2>
-        <p  style = {styles}>
+      <section className = "body">
+        <h2 className = "app-title">{props.title}</h2>
+        <p >
           One of my favourite places is {props.placeName} in {props.countryName}.
           {props.reason}.
         </p>
-        <div style = {styles}>
+        <div >
         <img
-          style = {styles}
           src={props.mainImg}
           alt={props.alt}
           width="600px"
           height="300px"
         ></img>
         </div>
-        <a href={props.locationLink}  style = {styles}>Location</a>
+        <a href={props.locationLink} target = "blank">Location</a>
+        <br></br>
       </section>
     );
   }

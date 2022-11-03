@@ -1,0 +1,9 @@
+body{
+    background: lightyellow;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center
+}
+.app-title{
+    text-align: center;
+    color: lightblue;
+}
