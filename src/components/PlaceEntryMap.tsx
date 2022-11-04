@@ -26,10 +26,10 @@ function PlaceEntry(props: PlaceProps): JSX.Element {
           height="300px"
         ></img>
       </div>
+      <br></br>
       <a href={props.locationLink} target="blank">
         Location
       </a>
-      <br></br>
     </section>
   );
 }
