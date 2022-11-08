@@ -16,7 +16,7 @@ const places: PlaceProps[] = [
     placeName: "Hong Kong",
     countryName: "China",
     mainImg:
-      "https://images.unsplash.com/photo-1616394158624-a2ba9cfe2994?ixlib:rb-4.0.3&ixid:MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto:format&fit:crop&w:687&q:80",
+      "https://images.unsplash.com/photo-1518599807935-37015b9cefcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     locationLink: "https://goo.gl/maps/ZJycWjboJtWQFuzC7",
     reason: " Nice weather, nature and city closeby, cheap and delicious food",
     alt: "View of Kowloon in Hong Kong at night",
