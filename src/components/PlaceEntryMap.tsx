@@ -9,7 +9,7 @@ interface PlaceProps {
   locationLink: string;
   reason: string;
 }
-
+// need to change props to onePlace? and then do onePlace.title etc
 function PlaceEntry(props: PlaceProps): JSX.Element {
   return (
     <section className="body">
