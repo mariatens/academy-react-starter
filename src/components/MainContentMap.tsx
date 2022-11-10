@@ -1,6 +1,7 @@
 import PlaceEntry from "./PlaceEntryMap";
 
 interface PlaceProps {
+  key: number;
   title: string;
   placeName: string;
   countryName: string;
@@ -12,6 +13,7 @@ interface PlaceProps {
 
 const places: PlaceProps[] = [
   {
+    key: 1,
     title: "Hong Kong",
     placeName: "Hong Kong",
     countryName: "China",
@@ -22,6 +24,7 @@ const places: PlaceProps[] = [
     alt: "View of Kowloon in Hong Kong at night",
   },
   {
+    key: 2,
     title: "Mirador de Chipeque",
     placeName: "Tenerife",
     countryName: "Spain",
@@ -33,6 +36,7 @@ const places: PlaceProps[] = [
     alt: "View of El Teide from Mirador de Chipeque",
   },
   {
+    key: 3,
     title: "Goatfell",
     placeName: "Isle of Arran",
     countryName: "Scotland",
@@ -44,6 +48,7 @@ const places: PlaceProps[] = [
     alt: "View from Goatfell mountain in isle of Arran",
   },
   {
+    key: 4,
     title: "Prague",
     placeName: "Prague",
     countryName: "Czech Republic",
@@ -57,7 +62,12 @@ const places: PlaceProps[] = [
 
 //.map over this array to return an instance of the Place component for each element
 function MainContentMap(): JSX.Element {
-  return <section>{places.map(PlaceEntry)}</section>;
+  return(
+  <ul>
+  {places.map((place) => {
+    return <PlaceEntry place={place} key={place.key} />;
+  })}
+</ul>
+  );
 }
-
 export default MainContentMap;

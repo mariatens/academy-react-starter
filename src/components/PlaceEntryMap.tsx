@@ -1,6 +1,7 @@
 import "./style.css";
 
 interface PlaceProps {
+  key: number;
   title: string;
   placeName: string;
   countryName: string;
@@ -9,25 +10,29 @@ interface PlaceProps {
   locationLink: string;
   reason: string;
 }
+interface PlaceMapItemProps {
+  // the type of "place" is the defined interface "Place"
+    place: PlaceProps;
+  }
 // need to change props to onePlace? and then do onePlace.title etc
-function PlaceEntry(props: PlaceProps): JSX.Element {
+function PlaceEntry(props: PlaceMapItemProps): JSX.Element {
   return (
     <section className="body">
-      <h2 className="app-title">{props.title}</h2>
+      <h2 key={props.place.key} className="app-title">{props.place.title}</h2>
       <p>
-        One of my favourite places is {props.placeName} in {props.countryName}.
-        {props.reason}.
+        One of my favourite places is {props.place.placeName} in {props.place.countryName}.
+        {props.place.reason}.
       </p>
       <div>
         <img
-          src={props.mainImg}
-          alt={props.alt}
+          src={props.place.mainImg}
+          alt={props.place.alt}
           width="600px"
           height="300px"
         ></img>
       </div>
       <br></br>
-      <a href={props.locationLink} target="blank">
+      <a href={props.place.locationLink} target="blank">
         Location
       </a>
     </section>
