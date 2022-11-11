@@ -1,6 +1,5 @@
-import PlaceEntry from "./PlaceEntryMap";
-
-interface PlaceProps {
+export interface OnePlace {
+  key: number;
   title: string;
   placeName: string;
   countryName: string;
@@ -10,18 +9,20 @@ interface PlaceProps {
   reason: string;
 }
 
-const places: PlaceProps[] = [
+export const places: OnePlace[] = [
   {
+    key: 1,
     title: "Hong Kong",
     placeName: "Hong Kong",
     countryName: "China",
     mainImg:
-      "https://images.unsplash.com/photo-1616394158624-a2ba9cfe2994?ixlib:rb-4.0.3&ixid:MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto:format&fit:crop&w:687&q:80",
+      "https://images.unsplash.com/photo-1518599807935-37015b9cefcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     locationLink: "https://goo.gl/maps/ZJycWjboJtWQFuzC7",
     reason: " Nice weather, nature and city closeby, cheap and delicious food",
     alt: "View of Kowloon in Hong Kong at night",
   },
   {
+    key: 2,
     title: "Mirador de Chipeque",
     placeName: "Tenerife",
     countryName: "Spain",
@@ -33,6 +34,7 @@ const places: PlaceProps[] = [
     alt: "View of El Teide from Mirador de Chipeque",
   },
   {
+    key: 3,
     title: "Goatfell",
     placeName: "Isle of Arran",
     countryName: "Scotland",
@@ -44,6 +46,7 @@ const places: PlaceProps[] = [
     alt: "View from Goatfell mountain in isle of Arran",
   },
   {
+    key: 4,
     title: "Prague",
     placeName: "Prague",
     countryName: "Czech Republic",
@@ -54,10 +57,3 @@ const places: PlaceProps[] = [
     alt: "View of Prague's bridge",
   },
 ];
-
-//.map over this array to return an instance of the Place component for each element
-function MainContentMap(): JSX.Element {
-  return <section>{places.map(PlaceEntry)}</section>;
-}
-
-export default MainContentMap;
