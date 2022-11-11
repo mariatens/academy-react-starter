@@ -5,8 +5,9 @@ function AllPlacesView(): JSX.Element {
   return (
     <ul>
       {places.map((place: OnePlace) => {
-        return;
-        <PlaceView place={place} key={place.key} />;
+        return(
+        <PlaceView place={place} key={place.key} />
+        )
       })}
     </ul>
   );

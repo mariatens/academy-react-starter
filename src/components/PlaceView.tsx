@@ -1,4 +1,3 @@
-import MainContentMap from "./AllPlacesView";
 import "./style.css";
 import { OnePlace } from "./myPlaces";
 
