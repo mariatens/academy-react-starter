@@ -1,21 +1,12 @@
+import MainContentMap from "./AllPlacesView";
 import "./style.css";
+import { OnePlace } from "./myPlaces"
 
-interface PlaceProps {
-  key: number;
-  title: string;
-  placeName: string;
-  countryName: string;
-  mainImg: string;
-  alt: string;
-  locationLink: string;
-  reason: string;
-}
-interface PlaceMapItemProps {
-  // the type of "place" is the defined interface "Place"
-    place: PlaceProps;
+interface PlaceViewProps {
+    place: OnePlace;
   }
 // need to change props to onePlace? and then do onePlace.title etc
-function PlaceEntry(props: PlaceMapItemProps): JSX.Element {
+function PlaceView(props: PlaceViewProps): JSX.Element {
   return (
     <section className="body">
       <h2 key={props.place.key} className="app-title">{props.place.title}</h2>
@@ -39,4 +30,4 @@ function PlaceEntry(props: PlaceMapItemProps): JSX.Element {
   );
 }
 
-export default PlaceEntry;
+export default PlaceView;
